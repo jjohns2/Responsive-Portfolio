@@ -4,6 +4,7 @@ body {
   line-height: 34px;
   color: #777777;
   background: url("../images/concrete_seamless.png");
+  margin: 0;
 }
 
 * {
@@ -219,42 +220,125 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media screen and (max-width: 980px) {
+@media only screen and (min-width : 961px) and (max-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    margin: 0 auto;
+    clear: both;
+    }
+
+    #main-container {
+      padding-top: 150px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 150px;
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width: 960px) {
+  .container {
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
+  }
+
+  #main-container {
+    padding-top: 150px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 150px;
+  }
+
+  #masthead {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #ffffff;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+    padding-left: 30px;
+  }
 
 }
 
-@media screen and (max-width: 768px) {
+
+@media only screen and (min-width : 641px) and (max-width: 767px) {
+  body {
+    margin: 0;
+  }
+
   .container {
     max-width: 768px;
+    margin: 0 auto;
+    clear: both;
   }
 
-  footer {
+  #main-container {
+    padding-top: 100px;
+    min-height: calc(100vh - 60px);
+    padding-left: 30px;
+    padding-right: 0;
+    margin-bottom: 100px;
+  }
+
+
+  #masthead {
     position: fixed;
+    z-index: 99;
     width: 100%;
-    bottom: 0;
+    margin: 0 0 30px;
+    overflow: auto;
+    color: #ffffff;
+    background: #ffffff;
+    border-bottom: 2px solid #cccccc;
   }
-
+  
   #logo {
-    width: 2px;
-    height: 90px;
+    width: 250px;
+    height: 70px;
     font-size: 30px;
-    font-weight: 700;
-    line-height: 90px;
+    line-height: 70px;
+    margin-left: 30px;
+  }
+  
+  nav {
+    float: right;
+    margin-top: 25px;
+    padding-right: 37px;
+  }
+  
+  nav a {
+    padding-left: 15px;
+    margin-left: 15px;
+    line-height: 18px;
+  }
+  
+
+  .main-section {
+    width: 95%;
+    padding: 30px;
+    margin: auto;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+  }
+  
+ 
 
 }
 
-@media screen and (max-width:640px) {
+@media only screen and (max-width:640px) {
 
   body {
     font-size: 16px;
     line-height: 1.2em;
-    max-height:
+    margin: 0;
   }
 
   #masthead {
     position: static;
     width: 100%;
-    padding-left: 2px;
   }
   
   #logo {
@@ -269,11 +353,11 @@ input[type=submit] {
   
   nav {
     clear: both;
-    margin: 0;
+    float: left;
+    width: 100%;
+    text-align: center;
     padding: 10px 5px 5px 5px;
     float: none;
-    margin-left: 20%;
-    margin-right: 20%;
     height: 40px;
   }
   
@@ -285,16 +369,20 @@ input[type=submit] {
 
 
   #main-container {
+    width: 95%;
     padding-top: 3px;
-    min-height: calc(100vh - 10px);
     padding-bottom: 50px;
+    margin: 0 auto;
   }
+
+  .container {
+    max-width: 620px;
+}
   
   .main-section {
-    float: left;
-    width: 100%;
+    width: 95%;
     padding: 30px;
-    margin: 0 0 40px;
+    margin: auto;
     background: #ffffff;
     border: 1px solid #dddddd;
   }
@@ -319,19 +407,17 @@ input[type=submit] {
   }
 
   footer {
-    position: fixed;
+    width: 100%;
     bottom: 0;
     padding: 15px 15px 30px 15px;
     clear: both;
     font-size: 12px;
     border-top: 5px solid #4aaaa5;
     height: 15px;
-    margin-top: 200px;
+    margin-top: 100px;
   }
 
-  .container {
-    max-width: 640px;
-}
+
 
 .work {
   position: relative;
@@ -355,10 +441,5 @@ input[type=submit] {
   margin-top: 10px;
   margin-right: 25px;
 }
-
-
-#contact-form li {
-  margin: 0 0 10px 0;
-  padding: 0;
 
 }
