@@ -384,6 +384,7 @@ input[type=submit] {
     padding-top: 3px;
     padding-bottom: 50px;
     margin: 0 auto;
+    min-height: calc(100vh - 125px);
   }
 
   .container {
@@ -396,6 +397,7 @@ input[type=submit] {
     margin: auto;
     background: #ffffff;
     border: 1px solid #dddddd;
+    margin-bottom: 50px;
   }
   
 
