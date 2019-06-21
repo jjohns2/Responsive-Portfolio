@@ -242,6 +242,9 @@ input[type=submit] {
 }
 
 @media only screen and (min-width : 768px) and (max-width: 960px) {
+
+  /* general */
+  
   .container {
   max-width: 960px;
   margin: 0 auto;
@@ -253,6 +256,9 @@ input[type=submit] {
     padding-right: 30px;
     padding-bottom: 150px;
   }
+
+
+  /* header */
 
   #masthead {
     position: fixed;
@@ -268,6 +274,9 @@ input[type=submit] {
 
 
 @media only screen and (min-width : 641px) and (max-width: 767px) {
+
+  /* general */
+
   body {
     margin: 0;
   }
@@ -285,6 +294,7 @@ input[type=submit] {
     margin-bottom: 50px;
   }
 
+    /* header */
 
   #masthead {
     position: fixed;
@@ -311,6 +321,7 @@ input[type=submit] {
     line-height: 18px;
   }
   
+  /* content */
 
   .main-section {
     width: 95%;
@@ -319,18 +330,20 @@ input[type=submit] {
     background: #ffffff;
     border: 1px solid #dddddd;
   }
-  
- 
 
 }
 
 @media only screen and (max-width:640px) {
+
+    /* general */
 
   body {
     font-size: 16px;
     line-height: 1.2em;
     margin: 0;
   }
+
+      /* header */
 
   #masthead {
     position: static;
@@ -363,6 +376,8 @@ input[type=submit] {
     padding-left: none;
   }
 
+      /* content */
+
 
   #main-container {
     width: 95%;
@@ -382,6 +397,7 @@ input[type=submit] {
     background: #ffffff;
     border: 1px solid #dddddd;
   }
+  
 
   h1 {
     padding-bottom: 10px;
@@ -389,18 +405,25 @@ input[type=submit] {
     line-height: 1.2em;
   }
 
+    /* index */
+
   .auth-image {
       clear: both;
       float: left;
       width: 95%;
       height: auto;
       margin-bottom: 20px;
+      margin-top: 10px;
+      margin-right: 25px;
+
   }
 
   p {
     clear: both;
     margin-top: 10px;
   }
+
+    /* footer */
 
   footer {
     width: 100%;
@@ -413,7 +436,7 @@ input[type=submit] {
     margin-top: 100px;
   }
 
-
+    /* portfolio */
 
 .work {
   position: relative;
@@ -430,12 +453,6 @@ input[type=submit] {
   opacity: 0.8;
 }
 
-.auth-image {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
-}
+
 
 }
